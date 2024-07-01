@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Website ng main character</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">The Lord Of The Mysteries</div>
+        <ul id="menuList">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#volumes">Volumes</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#pathways">Pathways</a></li>
+            <li><a href="#history">History</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    
+    <script>
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+    
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    
+    <section id="home">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="content d-flex w-100">
+                <div class="video-container flex-grow-1 me-3">
+                    <div class="row">
+                        <div class="col-md-8"> 
+                            <video id="lotm-video" controls class="w-100">
+                                <source src="lotmtrailer.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="title-home">The Lord Of The Mysteries (诡秘之主) </div>
+                            <p>"The Lord of the Mysteries" is a gripping fantasy-mystery tale centered around Klein Moretti, a former journalist embarking on a journey through a world shrouded in secrecy and danger. As he unravels the mysteries of the city of Tingen and beyond, he confronts ancient prophecies, hidden organizations, and his own inner conflicts. With each step, Klein navigates a treacherous path, forming alliances, confronting adversaries, and seeking understanding amidst the enigmatic forces that shape his world. Through its intricate world-building and compelling narrative, the story captivates readers with themes of power, ambition, and the pursuit of knowledge, inviting them on an unforgettable adventure filled with intrigue and peril.</p> 
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image-container d-flex flex-column align-items-center">
+                                <img src="cover2.png" alt="Lord Of The Mysteries" class="img-fluid">
+                                <p style="text-align:center"><b>Author: Cuttlefish That Loves Diving<br>April 1, 2018 - May 1, 2020</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="volumes">
+        
+        
+        <div class="container">
+            
+            <div class="heading">Novel Volumes</div>
+            <div class="grid">
+            <div class="box">
+                <img src="Vol1.png" alt="Volume 1">
+                <div class="text">Volume 1 - Clown</div>
+                <div class="description">The first volume contains 213 chapters in total, consisting of chapters 1 to 213. It details the story of Klein Moretti as he first arrives in the world of Lord of the Mysteries, his becoming a Beyonder, and his adventures as a Nighthawk of Tingen City. It covers events from June 28th to September 16th in the year 1349</div>
+            </div>
+            <div class="box">
+                <img src="Vol2.png" alt="Volume 2">
+                <div class="text">Volume 2 - Faceless</div>
+                <div class="description">The second volume contains 269 chapters in total, consisting of chapters 214 to 482. It focuses on Klein in the identity of a private detective, Sherlock Moriarty, in the city of Backlund. It covers events from September 16th, 1349 to the new year of 1350.</div>
+            </div>
+            <div class="box">
+                <img src="Vol3.png" alt="Volume 3">
+                <div class="text">Volume 3 - Traveller</div>
+                <div class="description">The third volume contains 250 chapters in total, consisting of chapters 483 to 732. It tells the story of Klein Moretti as he leaves Backlund and travels at sea under the identity of the crazy adventurer Gehrman Sparrow.</div>
+            </div>
+            <div class="box">
+                <img src="Vol4.png" alt="Volume 4">
+                <div class="text">Volume 4 - Undying</div>
+                <div class="description">The fourth volume contains 214 chapters in total, consisting of chapters 733 to 946. It depicts Klein's story in the identity of Dwayne Dantès as he attempts to enter the nobles' circle of the Loen Kingdom and his revenge on Ince Zangwill.</div>
+            </div>
+            <div class="box">
+                <img src="Vol5.png" alt="Volume 5">
+                <div class="text">Volume 5 - Red Priest</div>
+                <div class="description">The fifth volume contains 204 chapters in total, consisting of chapters 947 to 1150. It portrays of Klein's investigation of Great Smog of Backlund and the beginning of the world war at the end of 1350.</div>
+            </div>
+            <div class="box">
+                <img src="Vol6.png" alt="Volume 6">
+                <div class="text">Volume 6 - Lightseeker</div>
+                <div class="description">The sixth volume contains 116 chapters in total, consisting of chapters 1151 to 1266. It tells the story of Klein's journey in the Forsaken Land of the Gods.</div>
+            </div>
+            <div class="box">
+                <img src="Vol7.png" alt="Volume 7">
+                <div class="text">Volume 7 - The Hanged Man</div>
+                <div class="description">The seventh volume contains 87 chapters in total, consisting of chapters 1267 to 1353.</div>
+            </div>
+            <div class="box">
+                <img src="Vol8.png" alt="Volume 8">
+                <div class="text">Volume 8 - The Fool</div>
+                <div class="description">The eighth and final volume contains 41 chapters in total, consisting of chapters 1354 to 1394.</div>
+            </div>
+        </div>
+        </div>
+              </div>
+              <br>
+
+    </section>
+    
+    <section id="characters">
+        <div class="container">
+            <div class="heading-characters">Characters</div>
+            <div class="character-grid">
+                <div class="character-card" onclick="showPopup('character1')">
+                    <img src="char1.png" alt="Character 1">
+                    <p>The Fool</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character2')">
+                    <img src="char2.png" alt="Character 2">
+                    <p>Klein Moretti</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character3')">
+                    <img src="char3.png" alt="Character 2">
+                    <p>Audrey Hall</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character4')">
+                    <img src="char4.png" alt="Character 2">
+                    <p>Alger Wilson</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character5')">
+                    <img src="char5.png" alt="Character 2">
+                    <p>Fors Wall</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character6')">
+                    <img src="char6.png" alt="Character 2">
+                    <p>Amon</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character7')">
+                    <img src="char7.png" alt="Character 2">
+                    <p>Celestial Worthy</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character8')">
+                    <img src="char8.png" alt="Character 2">
+                    <p>Azik Eggers</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character9')">
+                    <img src="char9.png" alt="Character 2">
+                    <p>Amanises</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character10')">
+                    <img src="char10.png" alt="Character 2">
+                    <p>Bethel Abraham</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character11')">
+                    <img src="char11.png" alt="Character 2">
+                    <p>Adam</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character12')">
+                    <img src="char12.png" alt="Character 2">
+                    <p>Medici</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character13')">
+                    <img src="char13.png" alt="Character 2">
+                    <p>Gehrman Sparrow</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character14')">
+                    <img src="char14.png" alt="Character 2">
+                    <p>Merlin Hermes</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character15')">
+                    <img src="char15.png" alt="Character 2">
+                    <p>Leonard Mitchell</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character16')">
+                    <img src="char16.png" alt="Character 2">
+                    <p>Reinette Tinker</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character17')">
+                    <img src="char17.png" alt="Character 2">
+                    <p>Ancient Sun God</p>
+                </div>
+                <div class="character-card" onclick="showPopup('character18')">
+                    <img src="char18.png" alt="Character 2">
+                    <p>Emperor Roselle</p>
+                </div>
+
+               
+            </div>
+        
+            <div id="character-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <img id="popup-image" src="" alt="Character">
+                    <h2 id="popup-name"></h2>
+                    <p id="popup-pathways"></p>
+                    <p id="popup-sequence"></p>
+                    <p id="popup-info"></p>
+                </div>
+            </div>
+        
+            <script>
+                const characters = {
+                    'character1': {
+                        image: 'char1.png',
+                        name: 'The Fool',
+                        pathways:'Pathway: Fool, Door, Error (Above The Sequence)',
+                        sequence:'Aliases: Mr. Fool, Sea God Kalvetua, Lord of The Mysteries',
+                        info: 'The Fool is an old god that seeks to revive and reclaim his authority. "He" is mysterious and seems to be executing "His" will through the Tarot Club. "He" does not speak often, especially in later meetings, and only gives hints to Tarot Club members. "He" also does not allow members to offend "Him" and punished Cattleya once she let out hints about "Him".'
+                    },
+                    'character2': {
+                        image: 'char2.png',
+                        name: 'Klein Moretti',
+                        pathways:'Pathway: Fool, Door, Error (Above The Sequence) ',
+                        sequence:'Aliases: The Fool',
+                        info: '"He" is the current owner of the Sefirah Castle, and Half a Lord of Mysteries with authorities over the Fool Pathway, Door Pathway Door and Error Pathway. "He" is also the mysterious leader of the Tarot Club known as The Fool and a Transmigrator who comes from the modern era. From year 1352 of the Fifth Epoch, "He" became the God of the Church of the Fool.'
+                    },
+                    'character3': {
+                        image: 'char3.png',
+                        name: 'Audrey Hall',
+                        pathways:'Pathway: Visionary Pathway (Sequence 3 - Dream Weaver)',
+                        sequence:'Aliases: Miss Justice, Miss Pride, Dazzling Gem',
+                        info: 'Audrey Hall is a Beyonder of the Visionary Pathway. She is one of the first members of the Tarot Club, codenamed Justice,[1] and later joins the Psychology Alchemists. Her companion partner is Susie. She is a believer in the Evernight Goddess and has adopted the idea of equality for all people.'
+                    },
+                    'character4': {
+                        image: 'char4.png',
+                        name: 'Alger Wilson',
+                        pathways:'Pathway: Tyrant Pathway (Sequence 4 - Cataclysmic Interrer)',
+                        sequence:'Aliases: Mr. Hanged Man, Lord Wilson',
+                        info: 'Alger Wilson is a Beyonder of the Tyrant Pathway. The Captain of the Blue Avenger that once belonged to the Church of the Lord of Storms. He is one of the first members of the Tarot Club, codenamed The Hanged Man. He was the Pontiff to the Church of the Sea God, before he went on a journey to find the Western Continent.'
+                    },
+                    'character5': {
+                        image: 'char5.png',
+                        name: 'Fors Wall',
+                        pathways:'Pathway: Door Pathway (Sequence 2 - Planeswalker)',
+                        sequence:'Aliases: Miss Magician, Angel of Stars (Church of The Fool)',
+                        info: 'Fors Wall is a Beyonder of the Door Pathway. Codename The Magician in the Tarot Club. She is initially 23 years old, a bestselling novelist, and good friends with Xio Derecha. Later she becomes a disciple of Dorian Gray, a member of Abraham Family. She is lazy and sometimes postpones writing in order to enjoy herself.'
+                    },
+                    'character6': {
+                        image: 'char6.png',
+                        name: 'Amon',
+                        pathways:'Pathway: Error Pathway (Sequence 0 - Error)',
+                        sequence:'Aliases: Mr. Error, Blasphemer Amon, Angel of Time',
+                        info: 'Amon, also known as the Angel of Time, was one of the Kings of Angels from the Third Epoch and a child of the Ancient Sun God. "He" was born as a Sequence 1, Worm of Time with the Uniqueness of the Error Pathway.'
+                    },
+                    'character7': {
+                        image: 'char7.png',
+                        name: 'Celestial Worthy',
+                        pathways:'Pathway: Fool Pathway, Door Pathway, Error Pathway',
+                        sequence:'Aliases: Lord of The Mysteries (former)',
+                        info: 'The Celestial Worthy of Heaven and Earth refers to the former Great Old One, Lord of Mysteries, who was most active on Earth from the Pre-Epoch to the middle of the First Epoch, and the former owner of the Sefirah Castle. "He" is also referred to as "The great ruler of the spirit world" by the Seven Lights.'
+                    },
+                    'character8': {
+                        image: 'char8.png',
+                        name: 'Azik Eggers',
+                        pathways:'Pathway: Death Pathway (Sequence 2 - Death Consul)',
+                        sequence:'Aliases: Death Consul, Angel of Death (Church of The Fool)',
+                        info: 'A former lecturer at Klein s alma mater. A mysterious man with amnesia and unknown supernatural abilities. He is currently on a journey to recover his memories.'
+                    },
+                    'character9': {
+                        image: 'char9.png',
+                        name: 'Amanises',
+                        pathways:'Pathway: Death, Darkness, Twilight Giant (Above the Sequence)',
+                        sequence:'Aliases: Evernight Goddess',
+                        info: 'The Evernight Goddess is the Sequence 0 God of the Darkness Pathway and the God of the Church of the Evernight Goddess. "She" wields the power of the night, concealment, and misfortune. "She" is currently also holding the Uniquenesses of the Death Pathway and the Twilight Giant Pathway. "Her" true name is Amanises, a Subsidiary God of the Annihilation Demonic Wolf Flegrea in the Second Epoch. "She" is the first Transmigrator that came out from Sefirah Castle.'
+                    },
+                    'character10': {
+                        image: 'char10.png',
+                        name: 'Bethel Abraham',
+                        pathways:'Pathway: Door Pathway (Sequence 1 - Key of Stars)',
+                        sequence:'Aliases: Mr. Door',
+                        info: 'Bethel Abraham, also known as Mr. Door, was the ancestor of the Abraham Family, the top duke among the five great nobles of the Tudor Empire. "He" was banished to an isolated space of storms and darkness by the Evernight Goddess and the Lord of Storms in the War of the Four Emperors.'
+                    },
+                    'character11': {
+                        image: 'char11.png',
+                        name: 'Adam',
+                        pathways:'Pathway: Visionary Pathway (Half Above the Sequence)',
+                        sequence:'Aliases: He-Who-Must-Not-Be-Named',
+                        info: '""He" is the leader of the Twilight Hermit Order, a secret organization that works from the shadows to revive the Ancient Sun God. However, it is suspected the actual goal is to let Adam complete the advancement ritual of Sequence 0: Visionary.'
+                    },
+                    'character12': {
+                        image: 'char12.png',
+                        name: 'Medici',
+                        pathways:'Pathway: Red Priest Pathway (Sequence 1 - Conqueror)',
+                        sequence:'Aliases: Angel of War, Red Angel',
+                        info: 'Medici was one of the eight Kings of Angels under the Ancient Sun God, known as the Red Angel and War Angel. "He" was a Sequence 1 of the Red Priest Pathway and had accommodated its Uniqueness. "He" was a member of Rose Redemption, "He" is a firm believer of the True Creator. "He" died in the Blood Emperor s Sequence 0 ritual.'
+                    },
+                    'character13': {
+                        image: 'char13.png',
+                        name: 'Gehrman Sparrow',
+                        pathways:'Pathway: Fool Pathway (Sequence 1 - Attendant of Mysteries)',
+                        sequence:'Aliases: Mr. World, Strongest Adventurer',
+                        info: 'He is a crazy adventurer who began to hunt pirates on the sea before being involved in many Beyonder incidents at the Demigod level. He does not talk much, stays cold and calm all the time while being very assertive with others. Gehrman is also known as The World of the Tarot Club, a mad believer and the Angel of Redemption of The Fool.'
+                    },
+                    'character14': {
+                        image: 'char14.png',
+                        name: 'Merlin Hermes',
+                        pathways:'Pathway: Fool Pathway (Sequence 2 - Miracle Invoker)',
+                        sequence:'Aliases: Wandering Magician',
+                        info: 'A wandering magician who travels and grants people s wishes. “He” is the creator of the Fully Automatic Wishing Machine, a machine that can supposedly grant its users three wishes. However, it was actually Merlin Hermes granting the wishes. "He" calls himself the Miracle Magician and servant of "The Fool, Lord of Mysteries, Great Ruler of the Spirit World."'
+                    },
+                    'character15': {
+                        image: 'char15.png',
+                        name: 'Leonard Mitchell',
+                        pathways:'Pathway: Darkness Pathway (Sequence 4 - Nightwatcher)',
+                        sequence:'Aliases: Mr. Stars',
+                        info: 'Leonard Mitchell is a captain of the Red Gloves, a division under the Church of the Evernight Goddess, in Backlund diocese. Codename The Star in the Tarot Club.'
+                    },
+                    'character16': {
+                        image: 'char16.png',
+                        name: 'Reinette Tinker',
+                        pathways:'Pathway: Chained Pathway (Sequence 2 - Ancient Bane)',
+                        sequence:'Aliases: Miss Messenger, Angel of Holy Spirit (Church of The Fool)',
+                        info: 'Reinette Tinekerr is Klein s messenger, who asks for one gold coin for every message. It was revealed later that "She" is Sharron s teacher and a Sequence 2 Ancient Bane of the Chained Pathway. '
+                    },
+                    'character17': {
+                        image: 'char17.png',
+                        name: 'Ancient Sun God',
+                        pathways:'Pathway: God Almighty (Above the Sequence)',
+                        sequence:'Aliases: Adam',
+                        info: 'The Ancient Sun God is the person from the Pre-Epoch who woke up from the Chaos Sea in Chernobyl at the beginning of the Second Epoch. "He" became the "Creator" who killed the Ancient Gods and led humans to dominate the world in the Third Epoch.'
+                    },
+                    'character18': {
+                        image: 'char18.png',
+                        name: 'Roselle Gustav',
+                        pathways:'Pathway: Black Emperor Pathway (Sequence 0 - Black Emperor)',
+                        sequence:'Aliases: Emperor',
+                        info: 'Roselle Gustav is a Transmigrator from the modern era. "He" transmigrated in the year 1143, over two hundred years before Klein Moretti. Roselle was responsible for bringing over a lot of proverbs, literature, and advancements in technology.'
+                    },
+                   
+                };
+        
+                function showPopup(characterId) {
+                    const character = characters[characterId];
+                    document.getElementById('popup-image').src = character.image;
+                    document.getElementById('popup-name').textContent = character.name;
+                    document.getElementById('popup-pathways').textContent = character.pathways;
+                    document.getElementById('popup-sequence').textContent = character.sequence;
+                    document.getElementById('popup-info').textContent = character.info;
+                    document.getElementById('character-popup').style.display = 'block';
+                }
+        
+                function closePopup() {
+                    document.getElementById('character-popup').style.display = 'none';
+                }
+            </script>
+        </section>
+
+    <section id="pathways">
+    <div class="container">
+        <h1>Pathways to Divine</h1>
+        <p>
+            A Pathway <i>(途径, Tújìng)</i>, or Path of the Divine <i>(神之途径, Shén zhī tújìng)</i>, corresponds to a series of 10 named potion formulas that give access to supernatural and mystical powers. Once a being has drunk a potion, they become a Beyonder of that pathway. Each pathway belongs to a group containing one or more neighboring pathways, which a Beyonder can safely switch within at High-Sequence. At the end of each pathway, only one Beyonder can attain divinity and become the True God of that pathway.    
+        </p>
+    </div>
+    <br>
+    <div class="col-md-12">
+    <div class="container">
+        <div class="button-container">
+            <button onclick="showOriginalContent()">Standard Pathways</button>
+            <button onclick="showAlternateContent()">Non Standard Pathways</button>
+        </div>
+        <div id="grid" class="grid-container">
+          
+        </div>
+    </div> 
+</div>
+    </section>
+       <script>
+        const originalContent = [
+            {
+                name: "Lord of The Mysteries",
+                fontColor:"#845bb7",
+                popupFontColor: "#845bb7",
+                pathways: [
+                    { name: "Fool Pathway", info: "Divination / Shapeshifting / Puppetry / Historical / Miracle Performing", image:"Fool Symbol.png",
+                    fontColor:"#845bb7", fontFamily:"Helvetica", popupFontColor: "#845bb7" },
+                    { name: "Error Pathway", info: "Theft / Deception / Parasites / Time Manipulation / Error", image:"Error Symbol.png",
+                    fontColor:"#845bb7", fontFamily:"Helvetica", popupFontColor: "#845bb7" },
+                    { name: "Door Pathway", info: "Ability Replication / Space Manipulation / Teleportation / Concealment", image:"Door Symbol.png",
+                    fontColor:"#845bb7", fontFamily:"Helvetica", popupFontColor: "#845bb7" }
+                ],
+                info: "Fool / Error / Door"
+            },
+            {
+                name: "God Almighty",
+                fontColor:"#fef2a1",
+                popupFontColor: "#fef2a1",
+                pathways: [
+                    { name: "Visionary Pathway", info: "Mind Reading / Mental Manipulation / Dream Manipulation / Author Authority / Envisioning", image:"Visionary Symbol.png",
+                    fontColor:"#fef2a1", fontFamily:"Helvetica", popupFontColor: "#fef2a1" },
+                    { name: "Sun Pathway", info: "Light Manipulation / Buffs and Debuffs / Purification / Notarization", image:"Sun Symbol.png",
+                    fontColor:"#fef2a1", fontFamily:"Helvetica", popupFontColor: "#fef2a1" },
+                    { name: "Tyrant Pathway", info: "Ocean Control / Atmokinesis / Disaster Manipulation", image:"Tyrant Symbol.png",
+                    fontColor:"#fef2a1", fontFamily:"Helvetica", popupFontColor: "#fef2a1" },
+                    { name: "White Tower Pathway", info: "Learning / Knowledge / Mimicry / Ritualistic Magic", image:"White Tower Symbol.png",
+                    fontColor:"#fef2a1", fontFamily:"Helvetica", popupFontColor: "#fef2a1" },
+                    { name: "Hanged Man Pathway", info: "Degeneration / Shadow Camouflage / Flesh and Blood Magic / Soul Enslavement", image:"Hanged Man Symbol.png",
+                    fontColor:"#fef2a1", fontFamily:"Helvetica", popupFontColor: "#fef2a1" }
+                ],
+                info: "Visonary / Sun / Tyrant / White Tower / Hanged Man"
+            },
+            {
+                name: "Eternal Darkness",
+                fontColor:"#CECE8C",
+                popupFontColor: "#CECE8C",
+                pathways: [
+                    { name: "Darkness Pathway", info: "Darkness Manipulation / Concealment / Dream Walking / Soul Pacification / Misfortune", image:"Darkness Symbol.png",
+                    fontColor:"#6c6c4a", fontFamily:"Helvetica", popupFontColor: "#CECE8C" },
+                    { name: "Death Pathway", info: "Spirit Control / Necromancy / Ressurection / Decay",image:"Death Symbol.png",
+                    fontColor:"#6c6c4a", fontFamily:"Helvetica", popupFontColor: "#CECE8C" },
+                    { name: "Twilight Giant Pathway", info: "Weapon Mastery / Dawn Embodiment / Mercury Liquefacation / Twilight Decay",image:"Twilight Giant Symbol.png",
+                    fontColor:"#6c6c4a", fontFamily:"Helvetica", popupFontColor: "#CECE8C" }
+                ],
+                info: "Darkness / Death / Twilight Giant"
+            },
+            {
+                name: "Calamity of Destruction",
+                fontColor:"#b92a26",
+                popupFontColor: "#b92a26",
+                pathways: [
+                    { name: "Demoness Pathway", info: "Curse / Mirror Magic / Disease Manipulation / Natural Disasters / Seduction",image:"Demoness Symbol.png",
+                    fontColor:"#b92a26", fontFamily:"Helvetica", popupFontColor: "#b92a26" },
+                    { name: "Red Priest Pathway", info: "Ritualist of Strength / Atmokinesis / Conspiracy / War Derivation",image:"Red Priest Symbol.png",
+                fontColor:"#b92a26", fontFamily:"Helvetica", popupFontColor: "#b92a26" }
+                ],
+                info: "Demones / Red Priest"
+            },
+            {
+                name: "Demon of Knowledge",
+                fontColor:"#a132b1",
+                popupFontColor: "#a132b1",
+                pathways: [
+                    { name: "Hermit Pathway", info: "Ritualistic Magic / Mystical Re-enactment / Clairvoyance / Occult Knowledge",image:"Hermit Symbol.png",
+                    fontColor:"#a132b1", fontFamily:"Helvetica", popupFontColor: "#a132b1" },
+                    { name: "Paragon Pathway", info: "Craftmanship / Alchemy / Ritualistic Magic / Physics Manipulation / Technology",image:"Paragon Symbol.png",
+                    fontColor:"#a132b1", fontFamily:"Helvetica", popupFontColor: "#a132b1" }
+                ],
+                info: "Hermit / Paragon"
+            },
+            {
+                name: "Key of Light",
+                fontColor:"#54a1d9",
+                popupFontColor: "#54a1d9",
+                pathways: [
+                    { name: "Wheel of Fortune Pathway", info: "Luck Manipulation / Divination and Anti-Divination / Reincarnation",image:"Wheel of Fortune Symbol.png",
+                    fontColor:"#54a1d9", fontFamily:"Helvetica", popupFontColor: "#54a1d9" }
+                ],
+                info: "Wheel of Fortune."
+            },
+            {
+                name: "Goddess of Origin",
+                fontColor:"#c25131",
+                popupFontColor: "#c25131",
+                pathways: [
+                    { name: "Mother Pathway", info: "Biological Mutation / Healing / Alchemy / Fertility / Life",image:"Mother Symbol.png",
+                    fontColor:"#c25131", fontFamily:"Helvetica", popupFontColor: "#c25131" },
+                    { name: "Moon Pathway", info: "Potion Making / Vampirization / Darkness Magic / Moon Affinity",image:"Moon Symbol.png",
+                    fontColor:"#c25131", fontFamily:"Helvetica", popupFontColor: "#c25131" }
+                ],
+                info: "Mother / Moon"
+            },
+            {
+                name: "Father of Devils",
+                fontColor:"#cf1bae",
+                popupFontColor: "#cf1bae",
+                pathways: [
+                    { name: "Abyss Pathway", info: "Demonic Rituals / Devil Physiology / Desire Manipulation / Corruption Inducement",image:"Abyss Symbol.png",
+                    fontColor:"#cf1bae", fontFamily:"Helvetica", popupFontColor: "#cf1bae" },
+                    { name: "Chained Pathway", info: "Madness / Zombie Physiology / Wraith Physiology / Possesion / Curses",image:"Chained Symbol.png",
+                    fontColor:"#cf1bae", fontFamily:"Helvetica", popupFontColor: "#cf1bae" }
+                ],
+                info: "Abyss / Chained"
+            },
+            {
+                name: "The Anarchy",
+                fontColor:"#8f8f8f",
+                popupFontColor: "#8f8f8f",
+                pathways: [
+                    { name: "Black Emperor Pathway", info: "Bribe / Distortion / Absolute Law Manipulation / Disorder / Resurrection",image:"Black Emperor Symbol.png",
+                    fontColor:"#8f8f8f", fontFamily:"Helvetica", popupFontColor: "#8f8f8f" },
+                    { name: "Justiciar Pathway", info: "Rule Enforcement / Punishment / Order Manipulation / Tracking and Detection",image:"Justiciar Symbol.png",
+                    fontColor:"#8f8f8f", fontFamily:"Helvetica", popupFontColor: "#8f8f8f" }
+                ],
+                info: "Black Emperor / Justiciar"
+            },
+           
+        ];
+
+        const alternateContent = [
+            {
+                name: "Mother Goddess Of Depravity",
+                fontColor:"#bb5031",
+                pathways: [
+                    { name: "Villain", info: "Intimidation / Alchemical Knowledge / Life Manipulation / Heretical Magic",image:"nonstandard.png"
+                        ,fontColor:"#bb5031", fontFamily:"Helvetica", popupFontColor: "#bb5031"
+                     }
+                ],
+                info: "Villain Pathway"
+            },
+            {
+                name: "Mother Tree of Desire",
+                fontColor:"#cb1bab",
+                pathways: [
+                    { name: "Scrooge", info: "Desire Induction / Acting / Imitation / Dream Infiltration",image:"nonstandard.png"
+                        ,fontColor:"#cb1bab", fontFamily:"Helvetica", popupFontColor: "#cb1bab"
+                     }
+                ],
+                info: "Scrooge Pathway"
+            },
+            {
+                name: "Son of Chaos",
+                fontColor:"#929292",
+                pathways: [
+                    { name: "Broker", info: "Brokering / Gray Perception / Shadow Utilization / Accusation / Under-the-table / Overseeing",image:"nonstandard.png"
+                        ,fontColor:"#929292", fontFamily:"Helvetica", popupFontColor: "#929292"
+                     }
+                ],
+                info: "Broker Pathway"
+            },
+            {
+                name: "Primordial Hunger",
+                fontColor:"#af2c28",
+                pathways: [
+                    { name: "Tramp", info: "Digestive Enhancements / Ingredient Analaysis / Cooking / Ingredient Processing / Deprivation",image:"nonstandard.png"
+                        ,fontColor:"#af2c28", fontFamily:"Helvetica", popupFontColor: "#af2c28"
+                     }
+                ],
+                info: "Tramp Pathway"
+            },
+            {
+                name: "Circle of Inevitabilty",
+                fontColor:"#0566c0",
+                pathways: [
+                    { name: "Dancer", info: "Ritualistic Abilities / Fortune Telling / Contracts / Fate Manipulation",image:"nonstandard.png"
+                        ,fontColor:"#0566c0", fontFamily:"Helvetica", popupFontColor: "#0566c0"
+                     }
+                ],
+                info: "Dancer Pathway"
+            },
+            {
+                name: "Supernova Dominator",
+                fontColor:"#d5983e",
+                pathways: [
+                    { name: "Astronomy Aficionado", info: "Astronomy Knowledge / Fate Insight / Sacrificial Rituals / Navigation / Wave Generation / Gravity Manipulation",image:"nonstandard.png"
+                        ,fontColor:"#d5983e", fontFamily:"Helvetica", popupFontColor: "#d5983e"
+                     }
+                ],
+                info: "Astronomy Aficionado Pathway"
+            },
+            {
+                name: "Inextinguishable Ravings",
+                fontColor:"#9e34ae",
+                pathways: [
+                    { name: "Orator", info: "Secret Deed Rituals / Voice-based Power",image:"nonstandard.png"
+                        ,fontColor:"#9e34ae", fontFamily:"Helvetica", popupFontColor: "#9e34ae"
+                     }
+                ],
+                info: "Orator Pathway"
+            },
+            {
+                name: "Monarch of Decay",
+                fontColor:"#6b6b4a",
+                pathways: [
+                    { name: "Unknown Pathway", info: "Unknown Pathway",image:"nonstandard.png"
+                        ,fontColor:"#6b6b4a", fontFamily:"Helvetica", popupFontColor: "#6b6b4a"
+                     }
+                ],
+                info: "Unknown Pathway"
+            },
+            {
+                name: "High-Dimensional Overseer",
+                fontColor:"#8f62c9",
+
+                pathways: [
+                    { name: "Painter", info: "Mystical Painting Creation / Painting World Construction",image:"nonstandard.png"
+                        ,fontColor:"#8f62c9", fontFamily:"Helvetica", popupFontColor: "#8f62c9"
+                     }
+                ],
+                info: "Painter Pathway"
+            },
+            {
+                name: "Goddess of Fate",
+                fontColor:"#3eab83",
+                pathways: [
+                    { name: "Dreamless", info: "Fate Perception / Fate Manipulation",image:"nonstandard.png"
+                        ,fontColor:"#3eab83", fontFamily:"Helvetica", popupFontColor: "#3eab83"
+                     }
+                ],
+                info: "Dreamless Pathway"
+            }
+          
+        ];
+
+        function createGridItem(deity) {
+    const item = document.createElement('div');
+    item.className = 'grid-item';
+    item.innerHTML = `
+        <h3 class="deity-name" style="color: ${deity.fontColor};">
+            ${deity.name}
+            <div class="popup-deity" style="color: ${deity.popupFontColor};">
+                <div class="popup-content">
+                    <div class="popup-text">
+                        <h4 style="color: ${deity.popupFontColor}; font-family: Garamond;  font-weight: bold;">${deity.name}</h4>
+                        <p style="font-family:Helvetica; font-size: 14px;">${deity.info}</p>
+                    </div>
+                </div>
+            </div>
+        </h3>`;
+    deity.pathways.forEach(pathway => {
+        const pathwayElement = document.createElement('div');
+        pathwayElement.className = 'pathway';
+        pathwayElement.innerHTML = `
+            <img class="logo" src="${pathway.image}" alt="Logo">
+            <span class="pathway-text" style="color: ${pathway.fontColor}; font-family: ${pathway.fontFamily};">
+                ${pathway.name}
+                <div class="popup-pathway" style="color: ${pathway.popupFontColor};">
+                    <div class="popup-content">
+                        <img class="popup-logo" src="${pathway.image}" alt="Logo">
+                        <div class="popup-text">
+                            <h4 style="color: ${pathway.popupFontColor}; font-family:Garamond;">${pathway.name}</h4>
+                            <p style="font-family:Helvetica; font-size: 14px;">${pathway.info}</p>
+                        </div>
+                    </div>
+                </div>
+            </span>`;
+        item.appendChild(pathwayElement);
+    });
+    return item;
+}
+
+function populateGrid(content) {
+    const grid = document.getElementById('grid');
+    grid.innerHTML = '';
+    content.forEach(deity => {
+        grid.appendChild(createGridItem(deity));
+    });
+}
+
+function showOriginalContent() {
+    populateGrid(originalContent);
+}
+
+function showAlternateContent() {
+    populateGrid(alternateContent);
+}
+
+
+showOriginalContent();    
+</script>
+
+
+<section id="history">
+    <br><br><br>
+    <div class="history-header">World History</div>
+    <div class="quote-container">
+        <div class="quote" id="left-quote">“</div>
+        <div class="sentence" id="sentence">The Creator awoke from Chaos and shattered the darkness, creating the first ray of light. He then fused himself completely into the universe and made up all of existence.</div>
+        <div class="quote" id="right-quote">”</div>
+        <div class="quote-info">
+            <div id="quote-author">— Myth of Creation</div>
+            <div id="quote-source">on Lord of Mysteries, Chapter 18</div>
+        </div>
+    </div>
+    
+    <div class="history-container">
+        <div class="buttons">
+            <button onclick="changeContent(1)">Pre-Epoch</button>
+            <button onclick="changeContent(2)">1st Epoch</button>
+            <button onclick="changeContent(3)">2nd Epoch</button>
+            <button onclick="changeContent(4)">3rd Epoch</button>
+            <button onclick="changeContent(5)">4th Epoch</button>
+            <button onclick="changeContent(6)">5th Epoch</button>
+        </div>
+    
+        <div id="content">
+            
+            <h2 id="header">Pre-epoch</h2>
+            <p id="summary">In a time more ancient than the Modern Era, the sleeping Original Creator had naturally split into multiple personas. "They" were also in a state of slumber, but "They" began to use the authority and Beyonder Characteristics "They" controlled to influence the world, making many preparations for the true dissociation when the Original Creator awakened. Among the multiple personas, The Primordial One and The Celestial Worthy of Heaven and Earth were the most powerful and active Great Old Ones on Earth. Many folklores and legends in this time were based on actual mysterious events.</p>
+       <video id="video" autoplay loop>
+                <source src="preepoch.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</section>   
+<script>
+     const contents = [
+        {
+            videoSrc: "preepoch.mp4",
+            header: "Pre-Epoch",
+            summary: "In a time more ancient than the Modern Era, the sleeping Original Creator had naturally split into multiple personas. 'They' were also in a state of slumber, but 'They' began to use the authority and Beyonder Characteristics 'They' controlled to influence the world, making many preparations for the true dissociation when the Original Creator awakened. Among the multiple personas, The Primordial One and The Celestial Worthy of Heaven and Earth were the most powerful and active Great Old Ones on Earth. Many folklores and legends in this time were based on actual mysterious events.",
+            sentence: "The Creator awoke from Chaos and shattered the darkness, creating the first ray of light. He then fused himself completely into the universe and made up all of existence.",
+            leftQuoteSize: "3rem",
+            rightQuoteSize: "3rem",
+            author: "— Myth of Creation",
+            source: "on Lord of Mysteries, Chapter 18"
+
+        },
+        {
+            videoSrc: "1stepoch.mp4",
+            header: "First Epoch: The Age of Chaos",
+            summary: "The beginning was dark, chaotic, and filled with madness until Beyonder races eventually gained some rationality. The sky, land, sea, and underground world began to form order. This time lasted for countless years, and no record was left due to the early races not having a writing system.",
+            sentence: "In the First Epoch where chaos and madness reigned, some humans fused with the Beyonder characteristics, mutating into cruel, irrational, and bloodthirsty giants?",
+            leftQuoteSize: "3rem",
+            rightQuoteSize: "3rem",
+            author: "— Klein Moretti",
+            source: "on Lord of Mysteries, Chapter 1115"
+        },
+        {
+            videoSrc: "2ndepoch.mp4",
+            header: "Second Epoch: The Dark Epoch",
+            summary: "Due to the purification of Beyonder Characteristics, the major races have evolved their own characters and civilizations, and eight Ancient Gods have emerged one after another. 'They' ruled sky, land, and oceans. 'They' ruled over the Spirit World and Astral World, and various races. Humanity struggled to survive and became subordinates or even slaves of Giants, Elves, and Sanguines. Until the Ancient Sun God woke up and took back the authorities from Ancient Gods, allowing humanity to successfully rise up in revolt",
+            sentence: "The Second Epoch was also known as humanity’s Dark Epoch. At the time, the sky, ocean, and land were ruled over by dragons, giants, elves, mutants, devils, phoenixes, demonic wolves, and dead spirits.",
+            leftQuoteSize: "3rem",
+            rightQuoteSize: "3rem",
+            author: "",
+            source: "— Lord of Mysteries, Chapter 180"
+
+        },
+        {
+            videoSrc: "3rdepoch.mp4",
+            header: "Third Epoch: The Cataclysm Epoch",
+            summary: "After the death of all Ancient Gods, the Ancient Sun God became the absolute ruler of the world and the one and only Orthodox God. Humans walked out of the shadow of other races and became the dominant race of the land. They started to study the world of mysticism. They created the Pathways system with potion formulas and rituals based from the First Blasphemy Slate.",
+            sentence: "As for the words Cataclysm Epoch, he was no stranger to that term as a historian. It was the name of the third epoch. After his recent revision, Klein even knew that the third epoch was separated into two eras: the Glorious Era and the Cataclysm Era.",
+            leftQuoteSize: "3rem",
+            rightQuoteSize: "3rem",
+            author: "— Klein Moretti",
+            source: "on Lord of Mysteries, Chapter 60"
+        },
+        {
+            videoSrc: "4thepoch.mp4",
+            header: "Fourth Epoch: the Epoch of The Gods",
+            summary: "After the fall of the Ancient Sun God, the Eastern Continent where the City of Silver was located was isolated from the rest of the world, and became known as the 'Forsaken Land of the Gods'. The Solomon Empire established, led by the Black Emperor Solomon with support from the True Creator, as well as the Rose Redemption. Later on, Alista Tudor and Trunsoest rebelled against the Black Emperor Solomon and the Solomon Empire with the support of the six gods. They successfully killed the Black Emperor and established the Tudor-Trunsoest United Empire, replacing the Solomon Empire",
+            sentence: "Back then, deities walked the land, and not in the astral world.",
+            leftQuoteSize: "3rem",
+            rightQuoteSize: "3rem",
+            author: "— Mobet Zoroast",
+            source: "on Lord of Mysteries, Chapter 697"
+        },
+        {
+            videoSrc: "5thepoch.mp4",
+            header: "Fifth Epoch: The Iron Age",
+            summary: "After the fall of four emperors. The Northern Continent is ruled by seven Orthodox Churches and the Four Great Nations, and there are also many secret organizations operating secretly. In the early days, in the Southern Continent, due to the fall of the Underworld Emperor, the Resistance gradually appeared at the sea. The Highlands Kingdom and the Paz Kingdom were founded, before they were destroyed by the invasion from the Northern Continent nations. The Industrial Revolution started with the transmigration of Huang Tao as Roselle Gustav. The improvement of steam engine cultivated the growing number of pirates and the birth of steamship. Then started the era of Colonialism.",
+            sentence: "	I am not God, I am merely The Fool who is interested in the long history of this world.",
+            leftQuoteSize: "3rem",
+            rightQuoteSize: "3rem",
+            author: "— The Fool ",
+            source: "on Lord of Mysteries, Chapter 137"
+        },
+        
+    ];
+
+    function changeContent(index) {
+        const content = contents[index - 1];
+        const video = document.getElementById("video");
+        video.src = content.videoSrc;
+        video.load();
+        document.getElementById("header").innerText = content.header;
+        document.getElementById("summary").innerText = content.summary;
+        document.getElementById("sentence").innerText = content.sentence;
+        document.getElementById("left-quote").style.fontSize = content.leftQuoteSize;
+        document.getElementById("right-quote").style.fontSize = content.rightQuoteSize;
+        document.getElementById("quote-author").innerText = content.author;
+        document.getElementById("quote-source").innerText = content.source;
+    }
+</script>
+<footer style="background-color: #1d1d1d; color: #fff; padding: 20px; text-align: center;">
+    <p>&copy; 2024 YourWebsiteName. All rights reserved.</p>
+    <p>"Lord of the Mysteries" is a work by Cuttlefish That Loves Diving. All rights to the original work belong to the author.</p>
+    <p>For official updates and content:</p>
+    <ul style="list-style-type: none; padding: 0;">
+        <li><a href="https://www.weibo.com/u/7344384861" style="color: #fff; text-decoration: underline;" target="_blank">LoM Official Weibo (Chinese)</a></li>
+        <li><a href="https://book.qidian.com/info/1010868264/" style="color: #fff; text-decoration: underline;" target="_blank">Qidian (Chinese)</a></li>
+        <li><a href="https://book.qidian.com/info/1010868264/" style="color: #fff; text-decoration: underline;" target="_blank">Webnovel (English)</a></li>
+        <li><a href="https://manga.bilibili.com/detail/mc27594" style="color: #fff; text-decoration: underline;" target="_blank">Bilibili Manhua (Chinese Manhua)</a></li>
+        <li><a href="https://www.webnovel.com/comic/lord-of-the-mysteries_15896372906358001" style="color: #fff; text-decoration: underline;" target="_blank">Webnovel Comics (English Manhua)</a></li>
+    </ul>
+    <p>Website content is fan-created and intended for educational and entertainment purposes only. No copyright infringement intended.</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
